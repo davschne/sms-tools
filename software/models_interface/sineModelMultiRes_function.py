@@ -8,9 +8,10 @@ sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), '../mo
 import utilFunctions as UF
 import sineModel as SM
 
-def main(inputFile='../../sounds/orchestra.wav', window='hamming',
-  M1=4095, M2=2047, M3=1023,
-  N1=4096, N2=2048, N3=1024,
+def main(inputFile='../../sounds/orchestra.wav',
+  w1='hamming', w2='blackmanharris', w3='blackmanharris',
+  M1=4095, M2=513, M3=513,
+  N1=4096, N2=1024, N3=1024,
   B1=0, B2=1000, B3=5000,
   t=-80):
   """
